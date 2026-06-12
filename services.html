@@ -17,9 +17,6 @@
   <header class="navbar" role="banner">
     <div class="navbar__inner">
       <a href="index.html" class="navbar__logo" aria-label="Loya's Auto Repair — Home">
-        <svg class="navbar__logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
-        </svg>
         <div class="navbar__logo-text">
           <span class="navbar__logo-name">LOYA'S</span>
           <span class="navbar__logo-tag">Auto Repair</span>
@@ -63,115 +60,275 @@
     <!-- ===================== SERVICE LIST ===================== -->
     <section class="section" style="padding-top: 0;" aria-label="Service list">
       <div class="container">
+        <p class="services-hint animate-on-scroll">Click any service below to learn more</p>
 
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">01</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Engine Diagnostics &amp; Repair</h2>
-            <p class="service-row__desc">Full engine diagnostics using professional equipment to identify and repair any engine issue — from minor to major.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
+        <div class="services-grid">
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-engine">
+              <span class="service-card__title">Engine Diagnostics &amp; Repair</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-engine" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Full engine diagnostics using professional equipment to identify and repair any engine issue — from minor to major.</p>
+                  <ul class="service-card__list">
+                    <li>Computerized engine diagnostics and code reading</li>
+                    <li>Compression and leak-down testing</li>
+                    <li>Timing belt and chain service</li>
+                    <li>Gasket, seal, and head gasket repair</li>
+                    <li>Performance and drivability troubleshooting</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-brakes">
+              <span class="service-card__title">Brake Service &amp; Repair</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-brakes" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Complete brake system inspection, pad and rotor replacement, brake fluid service, and ABS repair.</p>
+                  <ul class="service-card__list">
+                    <li>Brake pad and rotor replacement</li>
+                    <li>Brake fluid flush and bleed service</li>
+                    <li>Caliper and hose inspection</li>
+                    <li>ABS system diagnostics and repair</li>
+                    <li>Emergency brake adjustment and repair</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-oil">
+              <span class="service-card__title">Oil Change &amp; Lube</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-oil" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Conventional, synthetic blend, and full synthetic oil changes with multi-point inspection included.</p>
+                  <ul class="service-card__list">
+                    <li>Conventional, blend, and full synthetic options</li>
+                    <li>Oil filter replacement with every service</li>
+                    <li>Fluid level and leak inspection</li>
+                    <li>Tire pressure and visual safety check</li>
+                    <li>Manufacturer-recommended interval guidance</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-transmission">
+              <span class="service-card__title">Transmission Service</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-transmission" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Transmission fluid service, filter replacement, and transmission repair for automatic and manual systems.</p>
+                  <ul class="service-card__list">
+                    <li>Transmission fluid drain and fill</li>
+                    <li>Filter replacement on applicable models</li>
+                    <li>Slipping, hard shifting, and noise diagnosis</li>
+                    <li>Clutch service for manual transmissions</li>
+                    <li>Linkage and mount inspection</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-electrical">
+              <span class="service-card__title">Electrical &amp; Battery</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-electrical" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Battery testing and replacement, alternator and starter repair, and full electrical system diagnostics.</p>
+                  <ul class="service-card__list">
+                    <li>Battery load testing and replacement</li>
+                    <li>Alternator and starter diagnosis</li>
+                    <li>Charging system inspection</li>
+                    <li>Wiring and fuse troubleshooting</li>
+                    <li>Power accessory and lighting repair</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-hvac">
+              <span class="service-card__title">Heating &amp; Air Conditioning</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-hvac" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">AC recharge, compressor repair, heater core service, and full HVAC system diagnostics.</p>
+                  <ul class="service-card__list">
+                    <li>AC refrigerant recharge and leak detection</li>
+                    <li>Compressor and condenser service</li>
+                    <li>Heater core and blower motor repair</li>
+                    <li>Cabin temperature and airflow diagnosis</li>
+                    <li>HVAC control and sensor troubleshooting</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-suspension">
+              <span class="service-card__title">Suspension &amp; Steering</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-suspension" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Shocks, struts, tie rods, ball joints, power steering service, and wheel alignment.</p>
+                  <ul class="service-card__list">
+                    <li>Shock and strut replacement</li>
+                    <li>Tie rod, ball joint, and bushing service</li>
+                    <li>Power steering fluid and pump repair</li>
+                    <li>Wheel alignment and tire wear analysis</li>
+                    <li>Steering noise and handling diagnosis</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-exhaust">
+              <span class="service-card__title">Exhaust System</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-exhaust" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Muffler repair and replacement, catalytic converter service, and exhaust leak repair.</p>
+                  <ul class="service-card__list">
+                    <li>Muffler and resonator replacement</li>
+                    <li>Catalytic converter inspection and service</li>
+                    <li>Exhaust pipe and hanger repair</li>
+                    <li>Leak detection and weld repair</li>
+                    <li>Emissions-related exhaust diagnostics</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-tires">
+              <span class="service-card__title">Tire Services</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-tires" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Tire rotation, flat repair, and tire pressure monitoring system service.</p>
+                  <ul class="service-card__list">
+                    <li>Tire rotation and balance check</li>
+                    <li>Flat tire repair and plug/patch service</li>
+                    <li>TPMS sensor diagnosis and service</li>
+                    <li>Tread depth and wear pattern inspection</li>
+                    <li>Proper inflation and safety recommendations</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-inspection">
+              <span class="service-card__title">State Inspection</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-inspection" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Texas state vehicle safety inspections performed quickly and professionally.</p>
+                  <ul class="service-card__list">
+                    <li>Texas state safety inspection certification</li>
+                    <li>Brake, light, and horn compliance check</li>
+                    <li>Steering, suspension, and tire inspection</li>
+                    <li>Windshield and mirror safety review</li>
+                    <li>Pre-inspection walkthrough if repairs are needed</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-maintenance">
+              <span class="service-card__title">Preventive Maintenance</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-maintenance" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Coolant flush, transmission service, spark plug replacement, air filter, cabin filter, and belt service.</p>
+                  <ul class="service-card__list">
+                    <li>Coolant flush and radiator service</li>
+                    <li>Spark plug and ignition component replacement</li>
+                    <li>Engine and cabin air filter replacement</li>
+                    <li>Drive belt and timing belt inspection</li>
+                    <li>Factory-schedule maintenance packages</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-card animate-on-scroll">
+            <button type="button" class="service-card__trigger" aria-expanded="false" aria-controls="service-check-engine">
+              <span class="service-card__title">Check Engine Light</span>
+              <svg class="service-card__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div id="service-check-engine" class="service-card__panel" hidden>
+              <div class="service-card__panel-inner">
+                <div class="service-card__content">
+                  <p class="service-card__summary">Computer diagnostics to identify exactly what triggered your check engine light and the best fix.</p>
+                  <ul class="service-card__list">
+                    <li>OBD-II code reading and interpretation</li>
+                    <li>Live data and sensor testing</li>
+                    <li>Emissions and fuel system diagnosis</li>
+                    <li>Clear explanation of findings before repair</li>
+                    <li>Post-repair verification and code clearing</li>
+                  </ul>
+                  <a href="tel:+18324682340" class="service-card__link">Call About This Service →</a>
+                </div>
+              </div>
+            </div>
+          </article>
+
         </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">02</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Brake Service &amp; Repair</h2>
-            <p class="service-row__desc">Complete brake system inspection, pad and rotor replacement, brake fluid service, and ABS repair.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">03</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Oil Change &amp; Lube</h2>
-            <p class="service-row__desc">Conventional, synthetic blend, and full synthetic oil changes with multi-point inspection included.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">04</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Transmission Service</h2>
-            <p class="service-row__desc">Transmission fluid service, filter replacement, and transmission repair for automatic and manual systems.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">05</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Electrical &amp; Battery</h2>
-            <p class="service-row__desc">Battery testing and replacement, alternator and starter repair, and full electrical system diagnostics.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">06</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Heating &amp; Air Conditioning</h2>
-            <p class="service-row__desc">AC recharge, compressor repair, heater core service, and full HVAC system diagnostics.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">07</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Suspension &amp; Steering</h2>
-            <p class="service-row__desc">Shocks, struts, tie rods, ball joints, power steering service, and wheel alignment.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">08</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Exhaust System</h2>
-            <p class="service-row__desc">Muffler repair and replacement, catalytic converter service, and exhaust leak repair.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">09</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Tire Services</h2>
-            <p class="service-row__desc">Tire rotation, flat repair, and tire pressure monitoring system service.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">10</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">State Inspection</h2>
-            <p class="service-row__desc">Texas state vehicle safety inspections performed quickly and professionally.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row animate-on-scroll">
-          <div class="service-row__number">11</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Preventive Maintenance</h2>
-            <p class="service-row__desc">Coolant flush, transmission service, spark plug replacement, air filter, cabin filter, and belt service.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
-        <div class="service-row service-row--right animate-on-scroll">
-          <div class="service-row__number">12</div>
-          <div class="service-row__content">
-            <h2 class="service-row__title">Check Engine Light</h2>
-            <p class="service-row__desc">Computer diagnostics to identify exactly what triggered your check engine light and the best fix.</p>
-            <a href="tel:+18324682340" class="service-row__link">Call About This Service →</a>
-          </div>
-        </div>
-
       </div>
     </section>
 

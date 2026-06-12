@@ -229,6 +229,38 @@
   }
 
   /* -----------------------------------------------------------------------
+     Services page — expandable cards
+     ----------------------------------------------------------------------- */
+  function initServiceCards() {
+    const cards = document.querySelectorAll('.service-card');
+    if (!cards.length) return;
+
+    cards.forEach((card) => {
+      const trigger = card.querySelector('.service-card__trigger');
+      const panel = card.querySelector('.service-card__panel');
+      if (!trigger || !panel) return;
+
+      trigger.addEventListener('click', () => {
+        const isOpen = card.classList.contains('is-open');
+
+        cards.forEach((other) => {
+          if (other !== card) {
+            other.classList.remove('is-open');
+            const otherTrigger = other.querySelector('.service-card__trigger');
+            const otherPanel = other.querySelector('.service-card__panel');
+            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+            if (otherPanel) otherPanel.hidden = true;
+          }
+        });
+
+        card.classList.toggle('is-open', !isOpen);
+        trigger.setAttribute('aria-expanded', String(!isOpen));
+        panel.hidden = isOpen;
+      });
+    });
+  }
+
+  /* -----------------------------------------------------------------------
      Init
      ----------------------------------------------------------------------- */
   document.addEventListener('DOMContentLoaded', () => {
@@ -237,5 +269,6 @@
     initScrollAnimations();
     initCountUp();
     initContactForm();
+    initServiceCards();
   });
 })();
